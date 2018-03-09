@@ -1,6 +1,7 @@
 <!DOCTYPE html >
 <!-- #1 #structure #document -->
 <html>
+    
 <head>
 
     <!-- #1 #structure #title -->
@@ -75,117 +76,169 @@
             font-size: larger;
             font-style: normal;
         }
+        
+        span {
+            width:80%;   
+        }
+        a {
+            color:black;
+        }
 
     </style>
 
 </head>
 
 <body>
+    
+    
 
-<!-- channel area -->
-<!-- #1 #channels #app-bar -->
-<h1>chatter|app</h1>
-
-<!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
-
-<!-- #1 #channels #buttons -->
-<button>new</button>
-<button>trending</button>
-<button>favorites</button>
+   <!-- channel area -->
+   <!-- #1 #channels (#Left app bar)-->
+    <div>          
+        <h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="picture of moocus" height="56px">chatter|app</img></h1>
+    </div>
 
 
-<!-- chat area -->
-<!-- #1 #chat #name -->
-<h1>#SevenContinents
-    <!-- #1 #chat #location is wrapped in small tag-->
-    <small>by
-        <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-        <strong>cheeses.yard.applies</strong>
-    </small>
-</h1>
+   <!-- #1 #channels #topics (#Chaneel list)-->
+    <div>
+        <ul style="list-style-type:none; background-color:white">           
+            <li>#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="picture of star-o"></li>
+            <li>#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="picture of star"></li> 
+            <li>#KillerApp<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="picture of star-o"></li>
+            <li>#FirstPersonOnMars<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="picture of star"></li>
+            <li>#Octoberfest<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="picture of star-o"></li>
+        </ul>   
+    </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>cheeses.yard.applies</strong>
-    Wed, June 20th, 13:37
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>15 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>What's the place you folks call home?</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!-- #1 #channels #buttons (#Tab bar)-->
+    <div style="background-color:white">
+        <button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="picture of lightbulb-o">new</button>
+        <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="picture of fire">trending</button>
+        <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="picture of star">favorites</button>
+    </div>   
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>truck.cotton.zone</strong>
-    Wed, June 20th, 13:39
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>4 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>BRISBANE! Hang loose!</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>thus.best.dishes</strong>
-    Wed, June 20th, 14:02
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>12 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>The big apple.</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!-- chat area -->
+    
+    <!-- #1 #chat #name (#Right app bar) -->
+    <div>
+        <h1>#SevenContinents
+        <!-- #1 #chat #location is wrapped in small tag-->
+        <small>by
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+            <strong>cheeses.yard.applies</strong>
+        </small>
+        </h1>
+    </div>
+    
+    <!-- #1 #chat #metadata contains location, weekday, day, and time (#Message container)-->
+    
+    <div>
+        <h3>
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations (#Metadata)-->
+            <strong><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank">cheeses.yard.applies</a></strong>
+            Wed, June 20th, 13:37
+            <!-- #1 #chat #ttl lives inside the metadata -->
+            <em>15 min. left</em>
+        </h3>
+        
+        <!-- #1 #chat #messages depict a short fictional chat(#Message)-->
+        <span><p>What's the place you folks call home?</p></span>
+        
+        <!-- #1 #chat #button subsequent to each message (#“+5 min.” button)-->
+        <button>+5 min.</button>
+    </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>driveway.helper.magazine</strong>
-    Wed, June 20th, 14:02
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>7 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>Eu sou um Carocas.</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!-- #1 #chat #metadata contains location, weekday, day, and time (#Message container)-->
+    
+    <div>
+        <h3>
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations (#Metadata)-->
+            <strong><a href="https://map.what3words.com/truck.cotton.zone" target="_blank">truck.cotton.zone</a></strong>
+            Wed, June 20th, 13:39
+            <!-- #1 #chat #ttl lives inside the metadata -->
+            <em>4 min. left</em>
+        </h3>
+        
+        <!-- #1 #chat #messages depict a short fictional chat(#Message)-->
+        <span><p>BRISBANE! Hang loose!</p></span>
+        
+        <!-- #1 #chat #button subsequent to each message (#“+5 min.” button)-->
+        <button>+5 min.</button>
+    </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>escapes.pitch.saucepan</strong>
-    Wed, June 20th, 14:07
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>14 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>Greetings from the western cape!</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!-- #1 #chat #metadata contains location, weekday, day, and time (#Message container)-->
+    
+    <div>
+        <h3>
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations (#Metadata)-->
+            <strong><a href="https://map.what3words.com/thus.best.dishes" target="_blank">thus.best.dishes</a></strong>
+            Wed, June 20th, 14:02
+            <!-- #1 #chat #ttl lives inside the metadata -->
+            <em>12 min. left</em>
+        </h3>
+        
+        <!-- #1 #chat #messages depict a short fictional chat(#Message)-->
+        <span><p>The big apple.</p></span>
+        
+        <!-- #1 #chat #button subsequent to each message (#“+5 min.” button)-->
+        <button>+5 min.</button>
+    </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time  -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>meanings.identity.pays</strong>
-    Wed, June 20th, 04:08
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>15 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>北京</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!-- #1 #chat #metadata contains location, weekday, day, and time (#Message container)-->
+    
+    <div>
+        <h3>
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations (#Metadata)-->
+            <strong><a href="https://map.what3words.com/driveway.helper.magazine" target="_blank">driveway.helper.magazine</a></strong>
+            Wed, June 20th, 14:02
+            <!-- #1 #chat #ttl lives inside the metadata -->
+            <em>7 min. left</em>
+        </h3>
+        
+        <!-- #1 #chat #messages depict a short fictional chat(#Message)-->
+        <span><p>Eu sou um Carocas.</p></span>
+        
+        <!-- #1 #chat #button subsequent to each message (#“+5 min.” button)-->
+        <button>+5 min.</button>
+    </div>
+
+    <!-- #1 #chat #metadata contains location, weekday, day, and time (#Message container)-->
+    
+    <div>
+        <h3>
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations (#Metadata)-->
+            <strong><a href="https://map.what3words.com/escapes.pitch.saucepan" target="_blank">escapes.pitch.saucepan</a></strong>
+            Wed, June 20th, 14:07
+            <!-- #1 #chat #ttl lives inside the metadata -->
+            <em>14 min. left</em>
+        </h3>
+        
+        <!-- #1 #chat #messages depict a short fictional chat(#Message)-->
+        <span><p>Greetings from the western cape!</p></span>
+        
+        <!-- #1 #chat #button subsequent to each message (#“+5 min.” button)-->
+        <button>+5 min.</button>
+    </div>
+
+    <!-- #1 #chat #metadata contains location, weekday, day, and time  (#Message container)-->
+    
+    <div>
+        <h3>
+            <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations (#Metadata)-->
+            <strong><a href="https://map.what3words.com/meanings.identity.pays" target="_blank">meanings.identity.pays</a></strong>
+            Wed, June 20th, 04:08
+            <!-- #1 #chat #ttl lives inside the metadata -->
+            <em>15 min. left</em>
+        </h3>
+        
+        <!-- #1 #chat #messages depict a short fictional chat(#Message)-->
+        <span><p>北京</p></span>
+        
+        <!-- #1 #chat #button subsequent to each message (#“+5 min.” button)-->
+        <button>+5 min.</button>
+    </div>
 
 </body>
+
 </html>
